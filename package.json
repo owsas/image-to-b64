@@ -1,6 +1,6 @@
 {
   "name": "@owsas/image-to-b64",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A module to convert images to b64 that also helps fetching them from the netwrok",
   "main": "out/index.js",
   "types": "out/index.d.ts",
