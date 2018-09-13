@@ -1,0 +1,52 @@
+{
+  "name": "image-to-b64",
+  "version": "0.0.0",
+  "description": "A module to convert images to b64 that also helps fetching them from the netwrok",
+  "main": "out/index.js",
+  "types": "out/index.d.ts",
+  "scripts": {
+    "test": "jest --ci --silent",
+    "build": "tsc",
+    "watch": "tsc -w",
+    "prepublishOnly": "tsc"
+  },
+  "keywords": [],
+  "author": "Juan Camilo Guarín P",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^23.3.2",
+    "@types/node": "^10.9.4",
+    "jest": "^23.6.0",
+    "ts-jest": "^23.1.4",
+    "tslint": "^5.11.0",
+    "tslint-config-airbnb": "^5.11.0",
+    "typescript": "^3.0.3"
+  },
+  "dependencies": {
+    "superagent": "^3.8.3"
+  },
+  "jest": {
+    "roots": [
+      "<rootDir>/src",
+      "<rootDir>/test"
+    ],
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ],
+    "modulePathIgnorePatterns": [
+      "<rootDir>/out"
+    ]
+  },
+  "directories": {
+    "test": "test"
+  }
+}
